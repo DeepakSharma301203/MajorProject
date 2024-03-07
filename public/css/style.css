@@ -68,6 +68,7 @@ body {
 .listing-card {
     border: none !important;
     margin-bottom: 2rem;
+    padding: auto;
 }
 
 .card-img-top {
