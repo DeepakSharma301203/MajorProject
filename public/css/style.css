@@ -162,32 +162,3 @@ body {
     font-size: 0.8rem;
 }
 
-
-/*navbar*/
-.btn-search{
-    font-size: 0.7rem;
-    background-color: #fe424d;
-    color: #fff;
-    height: 110%;
-    border-radius: 50%;
-  }
-  .btn-search:hover{
-    background-color: #fe424d;
-    color: #fff;
-  }
-  .btn-search i{
-    display: inline;
-    font-size: 0.8rem;
-  }
-  .search-input{
-    font-size: 0.7rem;
-    border-radius: 25px;
-    padding: 0.5rem 3rem 0.5rem 3rem;
-  }
-  .navbar-toggler{
-    margin-left: 1rem;
-    border: none;
-  }
-  .navbar-toggler i{
-    font-size: 1.2rem;
-  }
