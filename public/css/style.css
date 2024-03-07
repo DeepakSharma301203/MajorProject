@@ -149,3 +149,10 @@ body {
     display: flex;
     align-items: center;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .card-body p {
+      font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+  }
