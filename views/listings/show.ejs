@@ -35,14 +35,14 @@
     <div >
         <hr>
         <!-- is user logged in -->
-        <div class="d-flex justify-content-around mt-3">
+        <div>
             <% if(currUser){ %>
                 <div style="width: 100%;">
                     <h3>&nbsp;&nbsp;Leave a Review</h3>
                 </div>
                 <br>
                 <form action="/listings/<%= listing.id %>/reviews" method="POST" novalidate class="needs-validation d-flex flex-column">
-                    <div class="mb-3 mt-3">
+                    <div class="d-flex justify-content-around mt-3">
                     <label for="rating" class="form-label">Rating</label>
                     <fieldset class="starability-slot">
                         <input type="radio" id="no-rate" class="input-no-rate" name="review[rating]" value="0" checked aria-label="No rating.">
@@ -58,10 +58,10 @@
                         <label for="first-rate5" title="Amazing">5 stars</label>
                     </fieldset>
                     </div>
-                    <div class="mb-3 mt-3">
-                    <label for="comment" class="form-label">Comment</label>
-                    <textarea name="review[comment]" id="comment" cols="30" rows="5" class="form-control" required></textarea>
-                    <div class="invalid-feedback">Please Enter Comment</div>
+                    <div class="d-flex justify-content-around mt-3">
+                        <label for="comment" class="form-label">Comment</label>
+                        <textarea name="review[comment]" id="comment" cols="30" rows="5" class="form-control" required></textarea>
+                        <div class="invalid-feedback">Please Enter Comment</div>
                     </div>
                     <button class="btn btn-outline-dark align-self-end">Submit</button>
                 </form>
@@ -73,7 +73,7 @@
         <br>
         <div class="row">
             <% for(review of listing.reviews) {%>
-                <div class="card col-5 mb-3 ms-4">
+                <div class="card col-8 mb-3 ms-4">
                     <div class="card-body">
                         <h5 class="card-title"><b><%= review.author.username %></b></h5>
                         <p class="starability-result card-text" data-rating="<%= review.rating %>"></p>
