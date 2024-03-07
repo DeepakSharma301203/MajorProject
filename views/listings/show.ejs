@@ -36,7 +36,9 @@
         <hr>
         <!-- is user logged in -->
         <% if(currUser){ %>
-            <h3>&nbsp;&nbsp;Leave a Review</h3>
+            <div>
+                <h3>&nbsp;&nbsp;Leave a Review</h3>
+            </div>
             <br>
             <form action="/listings/<%= listing.id %>/reviews" method="POST" novalidate class="needs-validation d-flex flex-column">
                 <div class="mb-3 mt-3">
@@ -62,11 +64,11 @@
                 </div>
                 <button class="btn btn-outline-dark align-self-end">Submit</button>
               </form>
-              
             <hr>
         <% } %>
         <br><hr>
-        <p><b>All Reviews</b></p>
+
+        <div><p><b>All Reviews</b></p></div>
         <br>
         <div class="row">
             <% for(review of listing.reviews) {%>
