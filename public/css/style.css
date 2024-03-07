@@ -15,6 +15,10 @@ body {
     background-color: white;
 }
 
+.navbar-nav{
+    background-color: #ebebeb;
+}
+
 .fa-compass {
     color: #fe424d;
     font-size: 2rem;
