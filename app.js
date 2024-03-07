@@ -68,9 +68,9 @@ app.use(express.static(path.join(__dirname,"/public")));
 
 
 
-// app.get("/", (req,res) => {
-//     res.send("Hii! I am root");
-// })
+app.get("/", (req,res) => {
+    res.redirect("/listings");
+})
 
 
 
