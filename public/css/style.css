@@ -76,12 +76,6 @@ body {
     object-fit: cover !important;
 }
 
-.card-img-top-sm{
-    width:120%;
-    border-radius: 1rem;
-    object-fit: cover !important;
-}
-
 .card-body {
     padding: 0 !important;
 }
