@@ -22,6 +22,10 @@ body {
     padding-right: 1rem;
 }
 
+.navbar-nav{
+    align-items: center;
+}
+
 .fa-compass {
     color: #fe424d;
     font-size: 2rem;
