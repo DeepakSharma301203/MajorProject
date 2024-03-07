@@ -68,7 +68,6 @@ body {
 .listing-card {
     border: none !important;
     margin-bottom: 2rem;
-    padding: auto;
 }
 
 .card-img-top {
@@ -154,6 +153,6 @@ body {
 /* Media Queries */
 @media (max-width: 768px) {
     .card-body p {
-      font-size: 0.8rem; /* Adjust font size for smaller screens */
+      font-size: 0.8rem; 
     }
-  }
+}
