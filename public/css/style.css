@@ -151,11 +151,11 @@ body {
 }
 
 /* Media Queries */
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
     .card-body p {
       font-size: 0.8rem; 
     }
-} */
+}
 
 /*Comments*/
 .starability-slot{
