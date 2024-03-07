@@ -21,7 +21,7 @@
   
 
     <% if(currUser && listing.owner._id.equals(currUser._id)){ %>
-        <div class="btns d-flex justify-content-between mt-3">
+        <div class="btns d-flex justify-content-around mt-3">
             <a href="/listings/<%=listing._id%>/edit" class="btn btn-dark edit-btn col-auto">Edit</a>
             <form method="POST" action="/listings/<%=listing._id%>?_method=DELETE">
                 <button type="submit" class="btn btn-dark col-auto">DELETE</button>
