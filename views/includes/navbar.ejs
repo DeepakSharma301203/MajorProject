@@ -31,7 +31,7 @@
             data-bs-target="#navbarNavAltMarkup"
         >
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div  id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-link" href="/listings">Explore</a>
         </div>
@@ -42,7 +42,7 @@
           </form>
         </div>
 
-        <div class="navbar-nav ms-auto">
+        <div class="navbar-nav ms-auto collapse navbar-collapse">
           <a class="nav-link" href="/listings/new">Airbnb your home</a>
           <% if(!currUser){ %>
             <a class="nav-link" href="/Signup"><b>Sign up</b></a>
@@ -50,7 +50,7 @@
           <% } %>
           <% if(currUser){ %>
             <a class="nav-link" href="/logout"><b>Log out</b></a>
-            <% } %>
+          <% } %>
         </div>
       </div>
     </div>
