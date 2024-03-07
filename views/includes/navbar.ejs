@@ -1,6 +1,7 @@
 <style>
   .btn-search{
     font-size: 0.7rem;
+    width: 90px;
     background-color: #fe424d;
     color: #fff;
     border-radius: 25px;
@@ -13,7 +14,7 @@
   .btn-search i{
     display: inline;
     font-size: 0.8rem;
-    margin-right: 0.8rem;
+    margin-right: 0.4rem;
   }
   .search-input{
     font-size: 0.7rem;
@@ -28,8 +29,13 @@
         
         <div class="navbar-nav ms-auto">
           <form class="d-flex" role="search">
-            <input class="form-control me-2 search-input" type="search" placeholder="Search destination">
-            <button class="btn btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i>Search</button>
+            <input 
+              class="form-control me-2 search-input" 
+              type="search" 
+              placeholder="Search destination"
+              style="width: 80%;"
+            >
+            <button class="btn btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i>&nbsp; Search</button>
           </form>
         </div>
 

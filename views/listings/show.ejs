@@ -22,9 +22,9 @@
 
     <% if(currUser && listing.owner._id.equals(currUser._id)){ %>
         <div class="btns d-flex justify-content-around mt-3">
-            <a href="/listings/<%=listing._id%>/edit" class="btn btn-dark edit-btn col-auto">Edit</a>
+            <a href="/listings/<%=listing._id%>/edit" class="btn btn-dark edit-btn col-auto" style="width: 5rem;">Edit</a>
             <form method="POST" action="/listings/<%=listing._id%>?_method=DELETE">
-                <button type="submit" class="btn btn-dark col-auto">DELETE</button>
+                <button type="submit" class="btn btn-dark col-auto" style="width: 5rem;">DELETE</button>
             </form>
         </div>
     <% } %>
